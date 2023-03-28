@@ -19,5 +19,5 @@ jobs:
         run: ls /
         
       - name: List Toolcache
-        run: ls /toolcache
+        run: ls /opt/hostedtoolcache
         
