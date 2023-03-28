@@ -6,6 +6,8 @@ jobs:
   test-gh-toolcache:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/chcekout@v3
+      
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
