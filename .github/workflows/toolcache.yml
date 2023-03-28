@@ -1,0 +1,21 @@
+name: GH Toolcache
+
+on: [push]
+
+jobs:
+  test-gh-toolcache:
+    runs-on: host-docker-ubuntu20.04
+    steps:
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: zulu
+          java-version: 8
+          cache: maven
+      
+      - name: List Root
+        run: ls /
+        
+      - name: List Toolcache
+        run: ls /toolcache
+        
